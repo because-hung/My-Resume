@@ -2,7 +2,7 @@
   <div class="container mx-auto mt-12 grid grid-cols-12">
     <!--個人資料 -->
     <div class="profileSkill col-span-5">
-    <div class="profile  text-black bg-blue-500 p-4 flex justify-center ">
+    <div class="profile  text-black bg-blue-500 rounded-2xl p-4 flex justify-center ">
       <div class="imgInfo">
         <h2 class="font-bold text-3xl">
           個人資料 <strong class=" font-bold text-2xl">PROFILE</strong>
@@ -37,8 +37,8 @@
         <strong class="text-red-500 font-bold text-2xl" >SKILLS</strong>
       </h2>
       <div class="skill py-6  grid  grid-rows-1 grid-cols-2 gap-x-5 gap-y-12">
-        <div class="Css blur   shadow-xl  p-2 ">
-          <h3 class="text-2xl font-bold mb-3 ">HTML / CSS</h3>
+        <div class="Css blur border-b-4 border-r-4 border-gray-800 rounded-2xl   shadow-xl  p-2 ">
+          <h3 class="text-2xl font-bold mb-3 text-yellow-200">HTML / CSS</h3>
           <ul class="flex flex-wrap ">
             <li
               v-for="(item, i) in cssSkill"
@@ -49,9 +49,9 @@
             </li>
           </ul>
         </div>
-        <div class="Js blur shadow-xl   p-2">
-          <h3 class="text-2xl font-bold mb-3">JavaScript / Vue.js</h3>
-          <ul class="flex flex-wrap ml-4">
+        <div class="Js blur  border-b-4 border-r-4 border-gray-800 rounded-2xl shadow-xl   p-2">
+          <h3 class="text-2xl font-bold mb-3 text-yellow-200">JavaScript / Vue.js</h3>
+          <ul class="flex flex-wrap ">
             <li
               v-for="(item, i) in jsSkill"
               :key="i"
@@ -61,8 +61,8 @@
             </li>
           </ul>
         </div>
-        <div class="Other blur  shadow-xl  p-2">
-          <h3 class="text-2xl font-bold mb-3">Other Skill</h3>
+        <div class="Other blur border-b-4 border-r-4 border-gray-800 rounded-2xl  shadow-xl  p-2">
+          <h3 class="text-2xl font-bold mb-3 text-yellow-200">Other Skill</h3>
           <ul class="flex flex-wrap">
             <li
               v-for="(item, i) in otherSkill"
@@ -73,8 +73,8 @@
             </li>
           </ul>
         </div>
-        <div class="Someskill blur  shadow-xl  p-2">
-          <h3 class="text-2xl font-bold mb-3">略懂</h3>
+        <div class="Someskill blur border-b-4 border-r-4  border-gray-800 rounded-2xl  shadow-xl  p-2">
+          <h3 class="text-2xl font-bold mb-3 text-yellow-200">略懂</h3>
           <ul class="flex flex-wrap">
             <li
               v-for="(item, i) in knowSomeSkill"
@@ -89,18 +89,20 @@
       <!--作品 經歷 -->
     </div>
     </div>
-    <div class="projectInfo col-span-7 ml-6">
+    <div class="projectInfo col-span-7 ml-6 mb-10">
     <div class="project font-bold text-xl mt-6 ">
+      <div class="projectTitle mb-8">
         <span class="text-5xl bg-red-500 text-white p-2 mr-2 ">作品 </span>
-        <strong class="text-red-500 font-bold text-2xl">PROJECT</strong>
+        <strong class="text-red-500 font-bold text-2xl ">PROJECT</strong>
+        </div>
         <div class="projectCard px-12 font-medium text-left ">
           <ul
-            class=" flex flex-col my-6 bg-white p-6"
+            class=" flex flex-col  py-8 blur ring ring-offset-4 ring-gray-600 text-white p-6 rounded-2xl"
             v-for="(item, i) in project"
             :key="i"
           >
-            <li class="mt-8 mb-2 ">
-              作品: <span class="bg-blue-700 p-2 text-white font-bold ">{{ item.title }}</span>
+            <li class="mt-4 mb-6 ">
+               <span class="bg-blue-700 p-2 text-white font-bold ">{{ item.title }}</span>
             </li>
             <li class="my-2 ">
               技術:
@@ -178,7 +180,7 @@ export default {
 </script>
 <style lang="scss">
 body{
-    background-image: url(../assets/bodyBg.jpg);
+    background-image: url(../assets/bodyBg01.jpg);
       background-size: cover;
   background-position: center center;
 }
@@ -188,6 +190,6 @@ body{
   background-position: center center;
 }
 .blur{
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(20px);
 }
 </style>

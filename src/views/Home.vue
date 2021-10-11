@@ -118,7 +118,8 @@
                 {{ item.info }}
               </p>
             </li>
-            <li class="my-6 ">作品網址 <a class="p-1 bg-yellow-300 text-blue-600" :href="item.url"> {{item.url}}</a></li>
+            <li class="my-6 flex flex-col "><span>作品網址</span><a class="mt-2 pl-2  p-1 bg-yellow-300 text-blue-600 breakWord" :href="item.url"> {{item.url}}</a></li>
+            <li class="my-1 flex flex-col "><span>Github</span> <a class="mt-2 pl-2  p-1 bg-yellow-300 text-blue-600 breakWord" :href="item.github"> {{item.github}}</a></li>
             <li class="my-6">示意圖 <span></span></li>
           </ul>
         </div>
@@ -155,8 +156,9 @@ export default {
           info:
             '作品的發想是想要做一些能對社會有幫助的網頁，後來發現政府疫情資訊網的資訊太多太繁雜，可能導致民眾不容易觀看，所以從中抓出幾個重點，整合出資訊明瞭的疫情整合資訊頁，使得民眾更方便閱讀資訊，更能了解疫情的狀況',
           skill:
-            'Nuxt / Tailwind.css / Grid.flex / Scss / RWD / axios / async.await / 第三方api',
+            'Nuxt / Tailwind.css / Grid.flex / Scss / RWD / axios / async.await / 第三方api / 部屬 Heroku',
           url: '作品網址',
+          github: 'url',
           img: '示意圖'
         },
         {
@@ -164,15 +166,17 @@ export default {
           info:
             '作品的發想是有想過往電商公司做發展，作品想模擬電商網站的架構跟邏輯，透過購物車和下訂單等功能能訓練js的實務應用，也能了解大概是怎麼運作的',
           skill:
-            'Vue / Bootstrap / flex / Scss / RWD / axios / promise / restful api',
+            'Vue / Bootstrap / flex / Scss / RWD / axios / promise / restful api / 部屬 Github Pages',
           url: 'https://because-hung.github.io/vue.js-project-web/#/',
+          github: 'https://github.com/because-hung/vue.js-project-web',
           img: '示意圖'
         },
         {
           title: '仿youtube 靜態網頁',
           info: '仿youtube ui',
-          skill: 'Nuxt / Css / flex / RWD ',
-          url: '作品網址',
+          skill: 'Nuxt / Css / flex / RWD / 部屬 Heroku ',
+          url: 'https://ui-youtube.herokuapp.com/',
+          github: 'https://github.com/because-hung/Youtube-Project',
           img: '示意圖'
         }
       ]

@@ -1,7 +1,7 @@
 <template>
-  <div class="container mx-auto mt-12 lg:grid lg:grid-cols-12">
+  <div class="container mx-auto mt-12 xl:grid xl:grid-cols-12">
     <!--個人資料 -->
-    <div class="profileSkill col-span-5 px-6 lg:px-0">
+    <div class="profileSkill col-span-5 px-6 ">
     <div class="profile  text-black bg-blue-500 rounded-2xl p-4 sm:flex justify-center ">
       <div class="imgInfo">
         <h2 class="font-bold text-3xl">
@@ -14,19 +14,19 @@
         <h1 class="text-5xl font-bold my-6">洪瑛蔚</h1>
       </div>
       <ul class="contact pb-4 sm:py-12 sm:ml-8">
-        <li class="font-bold  my-2 sm:my-8">Mail: 4a33a006@stust.edu.tw</li>
-        <li class="font-bold  my-2 sm:my-8">From: Taichung, Taiwan</li>
+        <li class="font-bold  my-2 sm:my-8 text-base">Mail: barryhung841212@gmail.com</li>
+        <li class="font-bold  my-2 sm:my-8 text-base">From: Taichung, Taiwan</li>
         <li class="font-bold  my-2 sm:my-8">
           Github:
            <br>
-          <a class="bg-yellow-500 sm:bg-transparent p-1 text-blue-500" href="https://github.com/because-hung">
+          <a class=" text-base bg-yellow-500 sm:bg-transparent p-1 text-blue-500" href="https://github.com/because-hung">
             https://github.com/because-hung</a
           >
         </li>
-        <li class="font-bold  my-8 ">
+        <li class="font-bold my-2 sm:my-8 ">
           Blog:
           <br>
-          <a class="breakWord bg-yellow-500 sm:bg-transparent p-4 text-blue-500" href="https://because-hung.medium.com/">
+          <a class="text-base breakWord bg-yellow-500 sm:bg-transparent p-1 text-blue-500" href="https://because-hung.medium.com/">
             https://because-hung.medium.com/</a
           >
         </li>
@@ -41,11 +41,11 @@
       <div class="skill py-6 sm:px-6 lg:px-0 grid  grid-rows-1 grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-12">
         <div class="Css blur-sm border-b-4 border-r-4 border-gray-800 rounded-2xl   shadow-xl  p-2 ">
           <h3 class="text-2xl font-bold mb-3 lg:text-yellow-200">HTML / CSS</h3>
-          <ul class="flex flex-wrap ">
+          <ul class="flex flex-wrap justify-center xl:justify-start">
             <li
               v-for="(item, i) in cssSkill"
               :key="i"
-              class="font-bold m-2 bg-green-300 w-28 rounded-full p-2"
+              class="font-bold m-2 bg-green-300 w-28 rounded-full p-2 flex items-center justify-center"
             >
               {{ item }}
             </li>
@@ -53,11 +53,11 @@
         </div>
         <div class="Js blur-sm  border-b-4 border-r-4 border-gray-800 rounded-2xl shadow-xl   p-2">
           <h3 class="text-2xl font-bold mb-3 lg:text-yellow-200">JavaScript / Vue.js</h3>
-          <ul class="flex flex-wrap ">
+          <ul class="flex flex-wrap justify-center xl:justify-start">
             <li
               v-for="(item, i) in jsSkill"
               :key="i"
-              class="font-bold m-2 bg-green-300 w-28 rounded-full p-2"
+              class="font-bold m-2 bg-green-300 w-28 rounded-full p-2 flex items-center justify-center"
             >
               {{ item }}
             </li>
@@ -65,23 +65,11 @@
         </div>
         <div class="Other blur-sm border-b-4 border-r-4 border-gray-800 rounded-2xl  shadow-xl  p-2">
           <h3 class="text-2xl font-bold mb-3 lg:text-yellow-200">Other Skill</h3>
-          <ul class="flex flex-wrap">
+          <ul class="flex flex-wrap justify-center xl:justify-start">
             <li
               v-for="(item, i) in otherSkill"
               :key="i"
-              class="font-bold m-2 bg-green-300 w-28 rounded-full p-2"
-            >
-              {{ item }}
-            </li>
-          </ul>
-        </div>
-        <div class="Someskill blur-sm border-b-4 border-r-4  border-gray-800 rounded-2xl  shadow-xl  p-2">
-          <h3 class="text-2xl font-bold mb-3 lg:text-yellow-200">略懂</h3>
-          <ul class="flex flex-wrap">
-            <li
-              v-for="(item, i) in knowSomeSkill"
-              :key="i"
-              class="font-bold m-2 bg-green-300 w-28 rounded-full p-2"
+              class="font-bold m-2 bg-green-300 w-28 rounded-full p-2 flex items-center justify-center"
             >
               {{ item }}
             </li>
@@ -108,18 +96,18 @@
             </li>
             <li class="my-2 ">
               技術:
-              <span class=" leading-normal font-bold">{{
+              <p class=" leading-normal font-bold text-base">{{
                 item.skill
-              }}</span>
+              }}</p>
             </li>
             <li class="my-2 ">
             敘述:
-              <p class="info leading-normal mt-4  font-bold ">
+              <p class="info leading-normal mt-4  font-bold  text-base">
                 {{ item.info }}
               </p>
             </li>
-            <li class="my-6 flex flex-col "><span>作品網址</span><a class="mt-2 pl-2  p-1 bg-yellow-300 text-blue-600 breakWord" :href="item.url"> {{item.url}}</a></li>
-            <li class="my-1 flex flex-col "><span>Github</span> <a class="mt-2 pl-2  p-1 bg-yellow-300 text-blue-600 breakWord" :href="item.github"> {{item.github}}</a></li>
+            <li class="my-6 flex flex-col "><span>作品網址</span><a class="mt-2 pl-2  p-1 bg-yellow-300 text-blue-600 breakWord  text-base" :href="item.url"> {{item.url}}</a></li>
+            <li class="my-1 flex flex-col "><span>Github</span> <a class="mt-2 pl-2  p-1 bg-yellow-300 text-blue-600 breakWord  text-base" :href="item.github"> {{item.github}}</a></li>
           </ul>
         </div>
       </div>
@@ -143,17 +131,17 @@ export default {
         'Vue',
         'Vue Cli',
         'Vue Router',
+        'Vuex',
         'JQuery',
         'ES5 / ES6',
         'promise / async.await'
       ],
       otherSkill: ['Webpack 5', 'Git', 'Zeplin'],
-      knowSomeSkill: ['Vuex', 'React'],
       project: [
         {
           title: 'Covid-19 疫情資訊整合頁',
           info:
-            '作品的發想是想要做一些能對社會有幫助的網頁，後來發現政府疫情資訊網的資訊太多太繁雜，可能導致民眾不容易觀看，所以從中抓出幾個重點，整合出資訊明瞭的疫情整合資訊頁，使得民眾更方便閱讀資訊，更能了解疫情的狀況',
+            '作品的特色是仿 google 頁面的 ui，作品的發想是想要做一些能對社會有幫助的網頁，後來發現政府疫情資訊網的資訊太多太繁雜，可能導致民眾不容易觀看，所以從中抓出幾個重點，整合出資訊明瞭的疫情整合資訊頁，使得民眾更方便閱讀資訊，更能了解疫情的狀況',
           skill:
             'Nuxt / Tailwind.css / Grid.flex / Scss / RWD / axios / async.await / 第三方api / 部屬 Heroku',
           url: 'https://info-covid19-project.herokuapp.com/',
@@ -170,7 +158,7 @@ export default {
         },
         {
           title: '仿youtube 靜態網頁',
-          info: '仿youtube ui',
+          info: '仿youtube 的 ui ',
           skill: 'Nuxt / Css / flex / RWD / 部屬 Heroku ',
           url: 'https://ui-youtube.herokuapp.com/',
           github: 'https://github.com/because-hung/Youtube-Project'

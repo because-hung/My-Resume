@@ -19,14 +19,14 @@
         <li class="font-bold  my-2 sm:my-8">
           Github:
            <br>
-          <a class=" text-base bg-yellow-500 sm:bg-transparent p-1 text-blue-500" href="https://github.com/because-hung">
+          <a class=" text-base bg-yellow-400 sm:bg-transparent p-1 text-blue-500" href="https://github.com/because-hung">
             https://github.com/because-hung</a
           >
         </li>
         <li class="font-bold my-2 sm:my-8 ">
           Blog:
           <br>
-          <a class="text-base breakWord bg-yellow-500 sm:bg-transparent p-1 text-blue-500" href="https://because-hung.medium.com/">
+          <a class="text-base breakWord bg-yellow-400 sm:bg-transparent p-1 text-blue-500" href="https://because-hung.medium.com/">
             https://because-hung.medium.com/</a
           >
         </li>
@@ -141,9 +141,9 @@ export default {
         {
           title: 'Covid-19 疫情資訊整合頁',
           info:
-            '作品的特色是仿 google 頁面的 ui，作品的發想是想要做一些能對社會有幫助的網頁，後來發現政府疫情資訊網的資訊太多太繁雜，可能導致民眾不容易觀看，所以從中抓出幾個重點，整合出資訊明瞭的疫情整合資訊頁，使得民眾更方便閱讀資訊，更能了解疫情的狀況',
+            '作品的特色是仿 google 網頁的介面樣式，作品的發想是想要做一些能對社會有幫助的網頁，後來發現政府疫情資訊網的資訊太多太繁雜，可能導致民眾不容易觀看，所以從中抓出幾個重點，整合出資訊明瞭的疫情整合資訊頁，使得民眾更方便閱讀資訊，更能了解疫情跟疫苗的狀況，另一方面是想整合新學到的技術，做出新的作品',
           skill:
-            'Nuxt / Tailwind.css / Grid.flex / Scss / RWD / axios / async.await / 第三方api / 部屬 Heroku',
+            'Nuxt / Tailwind.css / Grid.Flex / Scss / RWD / axios / async.await / 第三方api / 部屬 Heroku',
           url: 'https://info-covid19-project.herokuapp.com/',
           github: 'https://github.com/because-hung/Covid-19-Project'
         },
@@ -157,8 +157,8 @@ export default {
           github: 'https://github.com/because-hung/vue.js-project-web'
         },
         {
-          title: '仿youtube 靜態網頁',
-          info: '仿youtube 的 ui ',
+          title: '仿 youtube 靜態網頁',
+          info: '仿 youtube 的介面樣式去練習切版',
           skill: 'Nuxt / Css / flex / RWD / 部屬 Heroku ',
           url: 'https://ui-youtube.herokuapp.com/',
           github: 'https://github.com/because-hung/Youtube-Project'

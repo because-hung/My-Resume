@@ -33,9 +33,9 @@
       </ul>
     </div>
     <!--技能 -->
-    <div class="skillProject  ">
+    <div class="skillProject">
       <h2 class="font-bold text-3xl mt-10 ">
-        <span class="text-5xl bg-red-500 text-white p-2 mr-2 ">技能</span>
+        <span class="text-4xl md:text-5xl bg-red-500 text-white p-2 mr-2 ">技能</span>
         <strong class="text-red-500 font-bold text-2xl" >SKILLS</strong>
       </h2>
       <div class="skill py-6 sm:px-6 lg:px-0 grid  grid-rows-1 grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-12">
@@ -82,25 +82,65 @@
     <div class="projectInfo col-span-7 sm:ml-6 mb-10">
     <div class="project font-bold text-xl mt-6 ">
       <div class="projectTitle mb-8">
-        <span class="text-5xl bg-red-500 text-white p-2 mr-2 ">作品 </span>
+        <span class="text-4xl md:text-5xl bg-red-500 text-white p-2 mr-2 ">經歷 / 作品 </span>
         <strong class="text-red-500 font-bold text-2xl ">PROJECT</strong>
         </div>
         <div class="projectCard px-8 sm:px-12 font-medium text-left ">
           <ul
             class=" flex flex-col  py-8 blur ring ring-offset-4 ring-gray-600 text-white p-6 rounded-2xl"
-            v-for="(item, i) in project"
+            v-for="(item, i) in experience"
             :key="i"
           >
-            <li class="mt-4 mb-6 ">
-               <span class="bg-blue-700 p-2 text-white font-bold ">{{ item.title }}</span>
+            <li class="mt-4 mb-6">
+               <span class="bg-purple-600 p-2 px-4 text-white font-bold ">{{ item.categories }}</span>
             </li>
-            <li class="my-2 ">
-              技術:
+              <li class="mb-2">
+              <span class="bg-blue-600 p-2 px-4 text-white font-bold">{{ item.company }}</span>
+            </li>
+            <li class="my-2">
+              主要技術:
               <p class=" leading-normal font-bold text-base">{{
                 item.skill
               }}</p>
             </li>
-            <li class="my-2 ">
+            <li class="my-2">
+              技術做的事:
+              <p class=" leading-normal font-bold text-base">{{
+                item.skillDo
+              }}</p>
+            </li>
+            <li class="my-2">
+            敘述:
+              <p class="info leading-normal mt-4  font-bold  text-base">
+                {{ item.info }}
+              </p>
+            </li>
+            <li v-if="item.url" class="my-6 flex flex-col "><span>網址</span><a class="mt-2 pl-2  p-1 bg-yellow-300 text-blue-600 breakWord  text-base" :href="item.url"> {{item.url}}</a></li>
+          </ul>
+          <ul
+            class=" flex flex-col  py-8 blur ring ring-offset-4 ring-gray-600 text-white p-6 rounded-2xl"
+            v-for="(item, i) in project"
+            :key="i"
+          >
+            <li class="mt-4 mb-6">
+               <span class="bg-purple-600 p-2 px-4 text-white font-bold ">{{ item.categories }}</span>
+            </li>
+              <li class="mb-2">
+              <span class="bg-blue-600 p-2 px-4 text-white font-bold">{{ item.title }}</span>
+            </li>
+            <li class="my-2">
+              主要技術:
+              <p class=" leading-normal font-bold text-base">{{
+                item.skill
+              }}</p>
+            </li>
+            <li class="my-2">
+              技術做的事:
+              <p class=" leading-normal font-bold text-base">{{
+                item.skillDo
+              }}</p>
+            </li>
+            <li class="my-2">
             敘述:
               <p class="info leading-normal mt-4  font-bold  text-base">
                 {{ item.info }}
@@ -128,38 +168,69 @@ export default {
       ],
       jsSkill: [
         'Nuxt',
-        'Vue',
-        'Vue Cli',
-        'Vue Router',
+        'Vue 3',
+        'Vue 2',
         'Vuex',
         'JQuery',
         'ES5 / ES6',
-        'promise / async.await'
+        'Promise / Async.Await'
       ],
       otherSkill: ['Webpack 5', 'Git', 'Zeplin'],
+      experience: [
+        {
+          categories: '經歷',
+          company: '新穎資訊 (2022/2 - 2022/4)',
+          info:
+            '依照業務需求做了篩選功能篩選特定條件，釘選功能釘選想關注的資訊，收藏功能把想要的資訊放入我的最愛，倒數功能倒數完改變資料狀態，Code Review 程式碼，維護專案',
+          skill:
+            'Vue 3 / Vuex / Bootstrap 5 / Docker',
+          skillDo:
+            '用 Vue 3 開發功能及維護專案，專案切版不是我負責的項目，所以 Bootstrap 5 使用方面只有調整樣式',
+          url: ''
+        },
+        {
+          categories: '經歷',
+          company: '侑欣科技 (接案)',
+          info:
+            '使用 Zeplin 看設計稿，依照設計稿切出所需的樣式，負責服務內容，加工設備，合作客戶三個頁面的切版',
+          skill:
+            'Nuxt / Tailwind.css / Grid',
+          skillDo:
+            '使用 Tailwind.css 和 Grid 做切版',
+          url: 'https://www.yooxin-tech.com/'
+        }
+      ],
       project: [
         {
+          categories: '作品',
           title: 'Covid-19 疫情資訊整合頁',
           info:
-            '作品的特色是仿 google 網頁的介面樣式，作品的發想是想要做一些能對社會有幫助的網頁，後來發現政府疫情資訊網的資訊太多太繁雜，可能導致民眾不容易觀看，所以從中抓出幾個重點，整合出資訊明瞭的疫情整合資訊頁，使得民眾更方便閱讀資訊，更能了解疫情跟疫苗的狀況，另一方面是想整合新學到的技術，做出新的作品',
+            '作品的特色是仿 google 網頁的介面樣式，作品的發想是想要做一些能對社會有幫助的網頁，後來發現政府疫情資訊網的資訊太多太繁雜，可能導致民眾不容易觀看，所以從中抓出幾個重點，整合出資訊明瞭的疫情整合資訊頁，使得民眾更方便閱讀資訊，更能了解疫情跟疫苗的狀況，另一方面是想整合新學到的技術(Nuxt跟Tailwind)，做出新的作品',
           skill:
-            'Nuxt / Tailwind.css / Grid.Flex / Scss / RWD / axios / async.await / 第三方api / 部屬 Heroku',
+            'Nuxt / Tailwind.css / Async.Await / 第三方 Api / 部屬 Heroku',
+          skillDo:
+            '把政府複雜的圖表資訊，抓出其中重點，整理出一個簡單易懂資訊頁面，Async.Await call 政府的 Api 回來，整合 Api 資料用操作 Array 的方法整理出想要的資料，呈現於畫面，使用新學到的技術 Nuxt 與 Tailwind 在作品上',
           url: 'https://info-covid19-project.herokuapp.com/',
           github: 'https://github.com/because-hung/Covid-19-Project'
         },
         {
+          categories: '作品',
           title: 'slack 天然沐浴用品電商網站',
           info:
-            '作品的發想是有想過往電商公司做發展，作品想模擬電商網站的架構跟邏輯，透過購物車和下訂單等功能能訓練js的實務應用，也能了解大概是怎麼運作的',
+            '作品的發想是有想過往電商公司做發展，作品想模擬電商網站的架構跟邏輯，透過購物車和下訂單等功能能訓練 Js 的實務應用，也能了解大概是怎麼運作的',
           skill:
-            'Vue / Bootstrap / flex / Scss / RWD / axios / promise / restful api / 部屬 Github Pages',
+            'Vue 2 / Bootstrap 4 / Scss / Promise / Restful Api',
+          skillDo:
+            '首頁運用 AOS 套件做動畫還有 Swiper 輪播，呈現網頁動態效果，運用 Bootstrap 4 切出商品頁面，運用 Vue 2 做購物車與下訂單的功能，也建立後台產品新增刪除訂單管理功能',
           url: 'https://because-hung.github.io/vue.js-project-web/#/',
           github: 'https://github.com/because-hung/vue.js-project-web'
         },
         {
-          title: '仿 youtube 靜態網頁',
-          info: '仿 youtube 的介面樣式去練習切版',
-          skill: 'Nuxt / Css / flex / RWD / 部屬 Heroku ',
+          categories: '作品',
+          title: '仿 Youtube 靜態網頁',
+          info: '仿 Youtube 的介面樣式去練習切版',
+          skill: 'Nuxt / Css / RWD / 部屬 Heroku ',
+          skillDo: '沒使用任何 Css 框架，只使用原生 Css 去切出類似 Youtube 的樣式，此作品沒任何功能，只是一個靜態頁面去做切版',
           url: 'https://ui-youtube.herokuapp.com/',
           github: 'https://github.com/because-hung/Youtube-Project'
         }

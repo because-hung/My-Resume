@@ -181,22 +181,22 @@ export default {
           categories: '經歷',
           company: '新穎資訊 (2022/2 - 2022/4)',
           info:
-            '依照業務需求做了篩選功能篩選特定條件，釘選功能釘選想關注的資訊，收藏功能把想要的資訊放入我的最愛，倒數功能倒數完改變資料狀態，Code Review 程式碼，維護專案',
+            '串接並整合 Api 資料，顯示在畫面上，依照業務需求做出篩選功能(篩選特定條件)，釘選功能(釘選想關注的資訊)，收藏功能(把想要的資訊放入我的最愛)，倒數功能(倒數完改變資料狀態)，Code Review 同事程式碼，維護專案',
           skill:
             'Vue 3 / Vuex / Bootstrap 5 / Docker',
           skillDo:
-            '用 Vue 3 開發功能及維護專案，專案切版不是我負責的項目，所以 Bootstrap 5 使用方面只有調整樣式',
+            '使用 Vue 3 開發功能及維護專案，串接並整合 Api 資料，Bootstrap 5 調整專案版面樣式，專案切版不是我負責，Vuex 建立資源共享與管理',
           url: ''
         },
         {
           categories: '經歷',
           company: '侑欣科技 (接案)',
           info:
-            '使用 Zeplin 看設計稿，依照設計稿切出所需的樣式，負責服務內容，加工設備，合作客戶三個頁面的切版',
+            '與朋友合作的接案，使用 Zeplin 看設計稿，依照設計稿切出所需的樣式，負責服務內容，加工設備，合作客戶三個頁面的切版',
           skill:
             'Nuxt / Tailwind.css / Grid',
           skillDo:
-            '使用 Tailwind.css 和 Grid 做切版',
+            '使用 Tailwind.css 做快速開發，Grid 做版面切版',
           url: 'https://www.yooxin-tech.com/'
         }
       ],
@@ -205,11 +205,11 @@ export default {
           categories: '作品',
           title: 'Covid-19 疫情資訊整合頁',
           info:
-            '作品的特色是仿 google 網頁的介面樣式，作品的發想是想要做一些能對社會有幫助的網頁，後來發現政府疫情資訊網的資訊太多太繁雜，可能導致民眾不容易觀看，所以從中抓出幾個重點，整合出資訊明瞭的疫情整合資訊頁，使得民眾更方便閱讀資訊，更能了解疫情跟疫苗的狀況，另一方面是想整合新學到的技術(Nuxt跟Tailwind)，做出新的作品',
+            '作品的特色是仿 google 網頁的介面樣式，在網路上還沒看過類似的作品，是一個滿新穎又獨一無二的作品，作品的發想是想要做一些能對社會有幫助的網頁，後來發現政府疫情資訊網的資訊太多太繁雜，可能導致民眾不容易觀看，所以從中抓出幾個重點，整合出資訊明瞭的疫情整合資訊頁，使得民眾更方便閱讀資訊，更能了解疫情跟疫苗的狀況，另一方面是想整合新學到的技術(Nuxt、Tailwind、Async.Await、Grid)，做出新的作品',
           skill:
             'Nuxt / Tailwind.css / Async.Await / 第三方 Api / 部屬 Heroku',
           skillDo:
-            '把政府複雜的圖表資訊，抓出其中重點，整理出一個簡單易懂資訊頁面，Async.Await call 政府的 Api 回來，整合 Api 資料用操作 Array 的方法整理出想要的資料，呈現於畫面，使用新學到的技術 Nuxt 與 Tailwind 在作品上',
+            '把政府複雜的圖表資訊，抓出其中重點，整理出一個簡單易懂資訊頁面，串接並整合政府 Api 資料，呈現於畫面，把新學到的技術 Nuxt、Tailwind、Async.Await、Grid 使用在作品上',
           url: 'https://info-covid19-project.herokuapp.com/',
           github: 'https://github.com/because-hung/Covid-19-Project'
         },
@@ -217,20 +217,20 @@ export default {
           categories: '作品',
           title: 'slack 天然沐浴用品電商網站',
           info:
-            '作品的發想是有想過往電商公司做發展，作品想模擬電商網站的架構跟邏輯，透過購物車和下訂單等功能能訓練 Js 的實務應用，也能了解大概是怎麼運作的',
+            '作品的發想是有想過往電商公司做發展，作品想模擬電商網站的架構跟邏輯，透過購物車和下訂單等功能能訓練 Js 的實務邏輯應用，也能了解到串接 Api 的運作，這是我的第一個作品，在這其中學到了 Js 實務應用、Api 邏輯、切版實務、如何使用套件等等',
           skill:
-            'Vue 2 / Bootstrap 4 / Scss / Promise / Restful Api',
+            'Vue 2 / Bootstrap 4 / Sass / Promise / Restful Api',
           skillDo:
-            '首頁運用 AOS 套件做動畫還有 Swiper 輪播，呈現網頁動態效果，運用 Bootstrap 4 切出商品頁面，運用 Vue 2 做購物車與下訂單的功能，也建立後台產品新增刪除訂單管理功能',
+            '這個作品首頁運用 AOS 套件做動畫還有 Swiper 輪播，呈現網頁動態效果，讓版面活潑生動一些，運用 Bootstrap 4 快速切出商品頁面，運用 Vue 2 串接 Api 經過資料處理後顯示在畫面上，做出購物車與下訂單的功能模擬購物的行為，也建立後台產品新增刪除訂單管理功能',
           url: 'https://because-hung.github.io/vue.js-project-web/#/',
           github: 'https://github.com/because-hung/vue.js-project-web'
         },
         {
           categories: '作品',
           title: '仿 Youtube 靜態網頁',
-          info: '仿 Youtube 的介面樣式去練習切版',
-          skill: 'Nuxt / Css / RWD / 部屬 Heroku ',
-          skillDo: '沒使用任何 Css 框架，只使用原生 Css 去切出類似 Youtube 的樣式，此作品沒任何功能，只是一個靜態頁面去做切版',
+          info: '看了一些自學的文章，上面說進步的方式，是可以找一些主流的頁面模仿切版，所以找了 Youtube 當模板，模仿其介面樣式去練習切版，並嘗試以 Github Pages 以外的方法去部屬，最後選擇了 heroku',
+          skill: 'Nuxt / Css / Sass / 部屬 Heroku ',
+          skillDo: '這個作品比較特別，給自己的練習跟挑戰，沒使用任何 Css 框架，只使用原生 Css 搭配 Sass 去切出類似 Youtube 的樣式，此作品沒任何功能，只是一個靜態頁面去做切版',
           url: 'https://ui-youtube.herokuapp.com/',
           github: 'https://github.com/because-hung/Youtube-Project'
         }

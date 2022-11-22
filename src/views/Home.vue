@@ -218,10 +218,10 @@ export default {
           info:
             '作品的特色是仿 google 網頁的介面樣式，在網路上還沒看過類似的作品，是一個滿新穎又獨一無二的作品，作品的發想是想要做一些能對社會有幫助的網頁，後來發現政府疫情資訊網的資訊太多太繁雜，可能導致民眾不容易觀看，所以從中抓出幾個重點，整合出資訊明瞭的疫情整合資訊頁，使得民眾更方便閱讀資訊，更能了解疫情跟疫苗的狀況，另一方面是想整合新學到的技術(Nuxt、Tailwind、Async.Await、Grid)，做出新的作品',
           skill:
-            'Nuxt / Tailwind.css / Async.Await / 第三方 Api / 部屬 Heroku',
+            'Nuxt / Tailwind.css / Async.Await / 第三方 Api',
           skillDo:
             '把政府複雜的圖表資訊，抓出其中重點，整理出一個簡單易懂資訊頁面，串接並整合政府 Api 資料，呈現於畫面，把新學到的技術 Nuxt、Tailwind、Async.Await、Grid 使用在作品上',
-          url: 'https://info-covid19-project.herokuapp.com/',
+          url: 'https://flywing.site/',
           github: 'https://github.com/because-hung/Covid-19-Project'
         },
         {
@@ -239,10 +239,10 @@ export default {
         {
           categories: '作品',
           title: '仿 Youtube 靜態網頁',
-          info: '看了一些自學的文章，上面說進步的方式，是可以找一些主流的頁面模仿切版，所以找了 Youtube 當模板，模仿其介面樣式去練習切版，並嘗試以 Github Pages 以外的方法去部屬，最後選擇了 heroku',
-          skill: 'Nuxt / Css / Sass / 部屬 Heroku ',
+          info: '看了一些自學的文章，上面說進步的方式，是可以找一些主流的頁面模仿切版，所以找了 Youtube 當模板，模仿其介面樣式去練習切版，並嘗試以 Github Pages 以外的方法去部屬，最後選擇了 render.com',
+          skill: 'Nuxt / Css / Sass',
           skillDo: '這個作品比較特別，給自己的練習跟挑戰，沒使用任何 Css 框架，只使用原生 Css 搭配 Sass 去切出類似 Youtube 的樣式，此作品沒任何功能，只是一個靜態頁面去做切版',
-          url: 'https://ui-youtube.herokuapp.com/',
+          url: 'https://youtube-project.onrender.com/',
           github: 'https://github.com/because-hung/Youtube-Project'
         }
       ]

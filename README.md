@@ -3,7 +3,7 @@
 <br />
 
 > 作品介紹
-+ 個人的自製履歷，裡面有作品的介紹，工作經歷，個人擁有的技術簡介
++ 個人的自製履歷，裡面有作品的介紹，工作經歷，個人擁有的技術介紹
 
 <br />
 
@@ -18,4 +18,5 @@ https://because-hung.github.io/My-Resume/#/
 <br />
 
 
-![resume](https://user-images.githubusercontent.com/63777618/204410103-cf71a281-5e8e-4091-afe4-b938657fe482.png)
+
+![resume-1](https://user-images.githubusercontent.com/63777618/204410386-a43e9ca6-8b50-4404-8a34-dbb1879db08c.png)

@@ -221,7 +221,7 @@ export default {
             'Nuxt / Tailwind.css / Async.Await / 第三方 Api',
           skillDo:
             '把政府複雜的圖表資訊，抓出其中重點，整理出一個簡單易懂資訊頁面，串接並整合政府 Api 資料，呈現於畫面，把新學到的技術 Nuxt、Tailwind、Async.Await、Grid 使用在作品上',
-          url: 'https://flywing.site/',
+          url: 'http://flywing.site/',
           github: 'https://github.com/because-hung/Covid-19-Project'
         },
         {

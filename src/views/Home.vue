@@ -183,7 +183,7 @@ export default {
           info:
             '串接並整合 Api 資料，顯示在畫面上，依照業務需求做出所需功能，依照設計稿切出所需的樣式，功能有後台報表頁面，信箱頁面，還有一些跳轉 skype、複製文字等等功能，維護專案修復 bug 和頁面樣式的換皮及重構切版',
           skill:
-            'Vue 2 / Vue 3 / Css / Sass / Pug / Element Plus / AngularJS',
+            'Vue 2 / Vue 3 (JS) / Css / Sass / Pug / Element Plus / AngularJS',
           skillDo:
             '使用 Vue 2 / 3 開發功能及維護專案，串接並整合 Api 資料，樣式使用 Css 開發及調整版面，偶爾搭配 Element UI 及 Plus 做使用，後台專案使用 AngularJS 維護及開發',
           url: ''
@@ -194,7 +194,7 @@ export default {
           info:
             '串接並整合 Api 資料，顯示在畫面上，依照業務需求做出篩選功能(篩選特定條件)，釘選功能(釘選想關注的資訊)，收藏功能(把想要的資訊放入我的最愛)，倒數功能(倒數完改變資料狀態)，Code Review 同事程式碼，維護專案',
           skill:
-            'Vue 3 / Vuex / Bootstrap 5 ',
+            'Vue 3 (JS) / Vuex / Bootstrap 5 ',
           skillDo:
             '使用 Vue 3 開發功能及維護專案，串接並整合 Api 資料，Bootstrap 5 調整專案版面樣式，專案切版不是我負責，Vuex 建立資源共享與管理',
           url: ''
@@ -269,10 +269,10 @@ body{
   background-position: center center;
 }
 .blur-sm{
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 .blur{
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 .breakWord{
  word-break: break-all;
